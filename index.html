@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de FedeR Studio - Desarrollador, Diseñador y Creador de Contenido">
+    <title>FedeR Studio - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">FedeR Studio</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a FedeR Studio</h1>
+            <p class="hero-subtitle">Desarrollador | Diseñador | Creador de Contenido</p>
+            <p class="hero-description">Creando soluciones digitales innovadoras y contenido de calidad</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-secondary">Contactame</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="placeholder-image-large">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>¡Hola! Soy FedeR Studio</h3>
+                    <p>
+                        Soy un desarrollador apasionado, diseñador creativo y productor de contenido digital. 
+                        Me encanta crear soluciones innovadoras que combinan funcionalidad y diseño excepcional.
+                    </p>
+                    <p>
+                        Con experiencia en desarrollo web, diseño de interfaces y creación de contenido multimedia,
+                        me dedico a transformar ideas en realidades digitales impactantes.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/FedeRStudio" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+                <button class="filter-btn" data-filter="content">Contenido</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="placeholder-image-project">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Proyecto Web 1</h3>
+                        <p>Descripción del proyecto: Sitio web responsivo con tecnologías modernas.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">Ver Proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="placeholder-image-project">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Diseño UI/UX</h3>
+                        <p>Interfaz moderna y funcional para aplicación mobile.</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">UX</span>
+                        </div>
+                        <a href="#" class="project-link">Ver Proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card" data-category="content">
+                    <div class="project-image">
+                        <div class="placeholder-image-project">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Contenido Multimedia</h3>
+                        <p>Serie de videos tutoriales y GIFs educativos sobre desarrollo.</p>
+                        <div class="project-tags">
+                            <span class="tag">Video</span>
+                            <span class="tag">GIF</span>
+                            <span class="tag">Tutorial</span>
+                        </div>
+                        <a href="#" class="project-link">Ver Proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="placeholder-image-project">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplicación Web</h3>
+                        <p>Dashboard interactivo con análisis de datos en tiempo real.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">Ver Proyecto →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>HTML / CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB / SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Diseño</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Adobe Suite</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Contenido</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Video Editing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Fotografía</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Animación / GIF</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image-blog">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Mejores Prácticas en Desarrollo Web</h3>
+                        <p class="blog-meta">
+                            <span class="date">4 de Marzo, 2026</span>
+                            <span class="reading-time">5 min lectura</span>
+                        </p>
+                        <p class="blog-excerpt">...
+                        Descubre las mejores prácticas para crear sitios web eficientes, accesibles y mantenibles...
+                        </p>
+                        <a href="#" class="read-more">Leer Más →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image-blog">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Diseño Responsivo: Guía Completa</h3>
+                        <p class="blog-meta">
+                            <span class="date">1 de Marzo, 2026</span>
+                            <span class="reading-time">7 min lectura</span>
+                        </p>
+                        <p class="blog-excerpt">
+                            Aprende cómo crear interfaces que se adapten perfectamente a cualquier dispositivo...
+                        </p>
+                        <a href="#" class="read-more">Leer Más →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image-blog">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>JavaScript Moderno en 2026</h3>
+                        <p class="blog-meta">
+                            <span class="date">25 de Febrero, 2026</span>
+                            <span class="reading-time">8 min lectura</span>
+                        </p>
+                        <p class="blog-excerpt">
+                            Las últimas características y tendencias en JavaScript que debes conocer este año...
+                        </p>
+                        <a href="#" class="read-more">Leer Más →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="placeholder-image-blog">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Creando Contenido Visual Atractivo</h3>
+                        <p class="blog-meta">
+                            <span class="date">20 de Febrero, 2026</span>
+                            <span class="reading-time">6 min lectura</span>
+                        </p>
+                        <p class="blog-excerpt">
+                            Tips y trucos para crear videos, GIFs y contenido visual que cautive a tu audiencia...
+                        </p>
+                        <a href="#" class="read-more">Leer Más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? Me encantaría saber de ti</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:hola@feder-studio.com">hola@feder-studio.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p><a href="tel:+123456789">+1 (234) 567-89</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Tu Ciudad, Tu País</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FedeR Studio. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre Mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#skills">Habilidades</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
