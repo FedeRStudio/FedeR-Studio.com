@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header, .footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-section {
+    padding: 50px;
+    transition: transform 0.3s;
+}
+
+.portfolio-section:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .portfolio-section {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-section {
+        flex-direction: column;
+    }
+}
