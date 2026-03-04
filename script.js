@@ -1,11 +1,46 @@
-// Portfolio JavaScript functionality
+// script.js
 
-// Function to display current date and time
-function displayCurrentDateTime() {
-    const now = new Date();
-    const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'UTC' };
-    const formattedDateTime = now.toLocaleString('en-GB', options).replace(',', '');
-    console.log(`Current Date and Time (UTC): ${formattedDateTime}`);
-}
+// Mobile menu functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
 
-displayCurrentDateTime();
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+// Smooth scrolling functionality
+const scrollLinks = document.querySelectorAll('a[href^="#"]');
+
+scrollLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Project filtering functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.project-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        projectItems.forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Interactive elements
+const interactiveElements = document.querySelectorAll('.interactive');
+
+interactiveElements.forEach(element => {
+    element.addEventListener('click', () => {
+        element.classList.toggle('active');
+    });
+});
